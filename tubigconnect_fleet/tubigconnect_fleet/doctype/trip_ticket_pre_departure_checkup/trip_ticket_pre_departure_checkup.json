@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-26 10:29:29.146435",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hhku",
+  "amended_from",
+  "driver",
+  "column_break_ntlf",
+  "vehicle",
+  "column_break_bprp",
+  "date",
+  "section_break_tndk",
+  "motor_oil",
+  "gas_tank_cap",
+  "tire_inflation",
+  "tools",
+  "column_break_fdlv",
+  "battery",
+  "horn",
+  "radiator_water_level",
+  "mirror",
+  "column_break_aymq",
+  "brake_fluid",
+  "gauge",
+  "lights"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hhku",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trip Ticket Pre Departure Checkup",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ntlf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bprp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_tndk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "motor_oil",
+   "fieldtype": "Select",
+   "label": "Engine, Motor Oil / Oil Filter Cap",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brake_fluid",
+   "fieldtype": "Select",
+   "label": "Brake Fluid, Brake Master",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "radiator_water_level",
+   "fieldtype": "Select",
+   "label": "Radiator Water Level, Radiator Cap",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tire_inflation",
+   "fieldtype": "Select",
+   "label": "Tire Inflation (Front / Rear / Spare)",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lights",
+   "fieldtype": "Select",
+   "label": "Lights (Head Lights, Signal, Park, Dim, Passenger, Emergency, Backup)",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "horn",
+   "fieldtype": "Select",
+   "label": "Horn",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gas_tank_cap",
+   "fieldtype": "Select",
+   "label": "Gas Tank Cap",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gauge",
+   "fieldtype": "Select",
+   "label": "Gauge (Fuel, Speedometer, Water Temp, Engine Oil)",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "battery",
+   "fieldtype": "Select",
+   "label": "Battery",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mirror",
+   "fieldtype": "Select",
+   "label": "Mirror (Side and Rear)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tools",
+   "fieldtype": "Select",
+   "label": "Tools (Jack, Tire Wrench, Early Warning Device)",
+   "options": "\nOK\nNOT OK\nNONE (N.A.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fdlv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_aymq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-26 11:42:57.492993",
+ "modified_by": "Administrator",
+ "module": "TubigConnect Fleet",
+ "name": "Trip Ticket Pre Departure Checkup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

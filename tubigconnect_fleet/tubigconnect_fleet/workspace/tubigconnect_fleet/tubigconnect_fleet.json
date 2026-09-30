@@ -1,0 +1,52 @@
+{
+ "app": "tubigconnect_fleet",
+ "charts": [],
+ "content": "[{\"id\":\"V32DfpZiCl\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Fleet Banner Dashboard\",\"col\":12}},{\"id\":\"IcL0V6rRSR\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Fleet Card\",\"col\":12}},{\"id\":\"Meia1oKRnx\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\" style=\\\"\\\">Quick Access</span>\",\"col\":12}},{\"id\":\"JOQpwe66VT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Vehicles\",\"col\":4}},{\"id\":\"ILc7_YTjtT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Drivers\",\"col\":4}},{\"id\":\"72xfM0tfFA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Trip Ticket\",\"col\":4}}]",
+ "creation": "2026-08-12 15:32:02.103824",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Fleet Banner Dashboard",
+   "label": "Fleet Banner Dashboard"
+  },
+  {
+   "custom_block_name": "Fleet Card",
+   "label": "Fleet Card"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "car-front",
+ "idx": 2,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "TubigConnect Fleet",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2026-08-18 10:27:52.348439",
+ "modified_by": "Administrator",
+ "module": "TubigConnect Fleet",
+ "name": "TubigConnect Fleet",
+ "number_cards": [
+  {
+   "label": "Active Trip Ticket",
+   "number_card_name": "Active Trip Ticket"
+  },
+  {
+   "label": "Active Drivers",
+   "number_card_name": "Active Drivers"
+  },
+  {
+   "label": "Active Vehicles",
+   "number_card_name": "Active Vehicles"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [],
+ "title": "TubigConnect Fleet",
+ "type": "Workspace"
+}

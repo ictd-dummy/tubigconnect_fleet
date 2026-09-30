@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-18 09:56:33.654659",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sx4a",
+  "amended_from",
+  "departure",
+  "driver",
+  "passenger",
+  "purpose",
+  "column_break_frcg",
+  "arrival",
+  "vehicle",
+  "destination",
+  "remarks",
+  "kilometer_km_reading_section",
+  "km_before",
+  "column_break_puau",
+  "km_after",
+  "tank_balance_section",
+  "tank_balance_before",
+  "column_break_qvfg",
+  "tank_balance_after"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sx4a",
+   "fieldtype": "Section Break",
+   "label": "Travel Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trip Ticket",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "departure",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Departure",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "link_filters": "[[\"Driver\",\"status\",\"=\",\"Active\"]]",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "columns": 12,
+   "fieldname": "passenger",
+   "fieldtype": "Table MultiSelect",
+   "label": "Passenger",
+   "max_height": "100px",
+   "options": "Trip Ticket Passenger"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Table MultiSelect",
+   "label": "Purpose",
+   "options": "Trip Ticket Purpose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_frcg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "arrival",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Arrival",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Table MultiSelect",
+   "label": "Destination",
+   "options": "Trip Ticket Destination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "kilometer_km_reading_section",
+   "fieldtype": "Section Break",
+   "label": "Kilometer (KM) Reading"
+  },
+  {
+   "fieldname": "km_before",
+   "fieldtype": "Data",
+   "label": "Before",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_puau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "km_after",
+   "fieldtype": "Data",
+   "label": "After"
+  },
+  {
+   "fieldname": "tank_balance_section",
+   "fieldtype": "Section Break",
+   "label": "Tank Balance"
+  },
+  {
+   "fieldname": "tank_balance_before",
+   "fieldtype": "Data",
+   "label": "Before",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qvfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tank_balance_after",
+   "fieldtype": "Data",
+   "label": "After"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-25 15:59:23.145273",
+ "modified_by": "Administrator",
+ "module": "TubigConnect Fleet",
+ "name": "Trip Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

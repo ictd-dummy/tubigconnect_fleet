@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-26 16:01:57.490239",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_b2ld",
+  "amended_from",
+  "fuel_log_no",
+  "section_break_apxd",
+  "vehicle",
+  "trip_ticket",
+  "driver",
+  "refuel_date",
+  "receipt",
+  "column_break_qgpc",
+  "fuel_type",
+  "quantity",
+  "cost",
+  "odometer_reading",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_b2ld",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fuel Log",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "fuel_log_no",
+   "fieldtype": "Data",
+   "label": "Fuel Log Number"
+  },
+  {
+   "fieldname": "section_break_apxd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trip_ticket",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trip Ticket",
+   "options": "Trip Ticket",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "refuel_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Refuel Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qgpc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "\nDiesel\nGasoline",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity (Liters)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost per Liter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odometer_reading",
+   "fieldtype": "Data",
+   "label": "Odometer Reading"
+  },
+  {
+   "fieldname": "receipt",
+   "fieldtype": "Attach Image",
+   "label": "Receipt"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-28 09:27:09.657610",
+ "modified_by": "Administrator",
+ "module": "TubigConnect Fleet",
+ "name": "Fuel Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
